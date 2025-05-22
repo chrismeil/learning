@@ -28,6 +28,14 @@
             --header-text: #fff;
         }
 
+        body.grid {
+            background-image: linear-gradient(#e5e5e5 1px, transparent 1px),
+                              linear-gradient(90deg, #e5e5e5 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+
+
         header {
             background-color: var(--header-bg);
             color: var(--header-text);
@@ -79,7 +87,15 @@
             <li>Social-Media-Kampagnen</li>
             <li>Datenbasierte Analysen</li>
         </ul>
+        <button id="toggle-bg">Hintergrund umschalten</button>
     </main>
+
+    <script>
+        document.getElementById('toggle-bg').addEventListener('click', function () {
+            document.body.classList.toggle('grid');
+        });
+    </script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
     <script>
@@ -99,6 +115,7 @@
         <a href="https://www.linkedin.com/in/christopher-meil-8183b9124/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
         <a href="https://x.com/testlandblog" target="_blank" rel="noopener noreferrer">X</a>
     </footer>
+
 
 </body>
 </html>
